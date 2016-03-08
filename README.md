@@ -1,14 +1,12 @@
-gcc-4.9.1-boost-1.56
-====================
 
-Bash script to install gcc-4.9.1 and boost-1.56 on CentOS 5.x, CentOS 6.x and Mac OS X.
+# GCC installer
+
+Bash script to install GCC on CentOS 5.x, CentOS 6.x (and Mac OS X)
+Currently configured for GCC 4.9.3
 
 To use it:
 
-    $ mkdir -p work/gcc
-    $ cd work/gcc
-    $ git clone https://github.com/jlinoff/gcc-4.9.1-boost-1.56.git 4.9.1
-    $ cd 4.9.1
+    $ git clone https://github.com/leoheck/centos-gcc-install
+    $ cd centos-gcc-install
     $ make
-
-For more detailed information see http://joelinoff.com/blog/?p=1514 (for 4.8.3).
+    

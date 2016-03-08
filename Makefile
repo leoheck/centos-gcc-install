@@ -1,11 +1,12 @@
 # Makefile
 
-all:
-	@if [ ! -d logs ] ; then mkdir logs ; fi
-	./bld.sh 2>&1 | tee logs/bld-$$(date +'%Y%m%d-%H%M%S').log
+all: 
+	@ mkdir logs
+	@ mkdir build
+	sh bld.sh build 2>&1 | tee logs/bld-$$(date +'%Y%m%d-%H%M%S').log
 
 clean-all:
 	rm -rf bld src rtf archives logs
 
 clean:
-	rm -rf bld src rtf *~
+	rm -rf build bld src rtf *~

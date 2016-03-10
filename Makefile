@@ -30,7 +30,7 @@ help:
 	@ echo mpfr-$(MPFR_VER).tar.bz2
 	@ echo mpc-$(MPC_VER).tar.gz
 	@ echo ppl-$(PPL_VER).tar.bz2
-	@ echo cloog-$(_VCLOOG).tar.gz
+	@ echo cloog-$(CLOOG_VER).tar.gz
 	@ echo gcc-$(GCC_VER).tar.bz2
 	@ echo binutils-$(BINUTILS_VER).tar.bz2
 	@ echo boost_$(BOOST_VER).tar.bz2
@@ -41,11 +41,12 @@ help:
 build: 
 	@ mkdir -p logs
 	@ mkdir -p build
-	bash bld.sh build 2>&1 | tee logs/bld-$$(date +'%Y%m%d-%H%M%S').log
+	bash bld.sh 2>&1 | tee logs/bld-$$(date +'%Y%m%d-%H%M%S').log
+
+clean:
+	rm -rf build bld src rtf *~
 
 
 clean-all:
 	rm -rf bld src rtf archives logs
 
-clean:
-	rm -rf build bld src rtf *~

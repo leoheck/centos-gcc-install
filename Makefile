@@ -36,9 +36,11 @@ help:
 	@ echo boost_$(BOOST_VER).tar.bz2
 	@ echo
 
+.PHONY: build
+
 build: 
-	@ mkdir logs
-	@ mkdir build
+	@ mkdir -p logs
+	@ mkdir -p build
 	bash bld.sh build 2>&1 | tee logs/bld-$$(date +'%Y%m%d-%H%M%S').log
 
 

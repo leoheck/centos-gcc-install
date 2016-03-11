@@ -313,7 +313,7 @@ ARS=(
     http://www.bastoul.net/cloog/pages/download/cloog-0.18.1.tar.gz
     http://ftp.gnu.org/gnu/gcc/gcc-4.9.1/gcc-4.9.1.tar.bz2
     http://ftp.gnu.org/gnu/binutils/binutils-2.24.tar.bz2
-    http://sourceforge.net/projects/boost/files/boost/1.56.0/boost_1_56_0.tar.bz2
+    http://mirror.nienbo.com/boost/boost_1_56_0.tar.bz2
     #
     # Why glibc is disabled (for now).
     #
